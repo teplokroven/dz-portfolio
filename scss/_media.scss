@@ -1,17 +1,23 @@
 @media (max-width: 992px) {
+  .section-hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .hero__link {
     font-size: 20px;
   }
 
-  @media (max-width: 854px) {
-    .section-hero {
-      padding-top: 100px;
-    }
+  .icon {
+    transform: scale(1.6);
 
-    .hero__foto {
-      margin: 0 auto;
-      margin-bottom: 30px;
+    &:hover {
+      transform: scale(1.8);
     }
+  }
+
+  .footer-info__icons {
+    gap: 30px;
   }
 }
 
@@ -21,7 +27,7 @@
   }
 
   .hero__link {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .projects__title {
@@ -116,17 +122,13 @@
 
     &-info {
 
-      &__foto {
-        width: 200px;
-      }
-
       &__title {
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 60px;
       }
 
       &__icons {
-        gap: 70px;
+        gap: 55px;
       }
     }
   }
@@ -147,7 +149,7 @@
     align-items: center;
     gap: 40px;
   }
-  
+
   .hero {
 
     &__foto {
@@ -169,6 +171,7 @@
   }
 
   .screen-project {
+    min-width: auto;
     min-height: 80vh;
   }
 }
@@ -179,14 +182,10 @@
     &__title {
       font-size: 45px;
     }
-
-    &__link {
-      font-size: 28px;
-    }
   }
 
   .screen-project {
-    min-width: 100%;
+    min-width: auto;
   }
 
   .form {
@@ -197,21 +196,6 @@
 
       &::placeholder {
         font-size: 16px;
-      }
-    }
-  }
-
-  .footer {
-
-    &-info {
-
-      &__title {
-        font-size: 25px;
-        margin-bottom: 60px;
-      }
-
-      &__icons {
-        gap: 55px;
       }
     }
   }

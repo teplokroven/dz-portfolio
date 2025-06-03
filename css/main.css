@@ -406,17 +406,21 @@ img {
 }
 
 @media (max-width: 992px) {
+  .section-hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .hero__link {
     font-size: 20px;
   }
-}
-@media (max-width: 992px) and (max-width: 854px) {
-  .section-hero {
-    padding-top: 100px;
+  .icon {
+    transform: scale(1.6);
   }
-  .hero__foto {
-    margin: 0 auto;
-    margin-bottom: 30px;
+  .icon:hover {
+    transform: scale(1.8);
+  }
+  .footer-info__icons {
+    gap: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -424,7 +428,7 @@ img {
     padding-bottom: 130px;
   }
   .hero__link {
-    font-size: 30px;
+    font-size: 28px;
   }
   .projects__title {
     font-size: 40px;
@@ -493,15 +497,12 @@ img {
   .form__btn {
     font-size: 20px;
   }
-  .footer-info__foto {
-    width: 200px;
-  }
   .footer-info__title {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 60px;
   }
   .footer-info__icons {
-    gap: 70px;
+    gap: 55px;
   }
   .icon {
     transform: scale(2.5);
@@ -531,6 +532,7 @@ img {
     max-width: 100%;
   }
   .screen-project {
+    min-width: auto;
     min-height: 80vh;
   }
 }
@@ -538,11 +540,8 @@ img {
   .hero__title {
     font-size: 45px;
   }
-  .hero__link {
-    font-size: 28px;
-  }
   .screen-project {
-    min-width: 100%;
+    min-width: auto;
   }
   .form__input {
     height: 60px;
@@ -553,12 +552,5 @@ img {
   }
   .form__input::placeholder {
     font-size: 16px;
-  }
-  .footer-info__title {
-    font-size: 25px;
-    margin-bottom: 60px;
-  }
-  .footer-info__icons {
-    gap: 55px;
   }
 }/*# sourceMappingURL=main.css.map */
