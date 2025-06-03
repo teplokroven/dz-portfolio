@@ -19,7 +19,6 @@
   display: flex;
   align-items: center;
   gap: 90px;
-  flex-wrap: wrap-reverse;
 
   &:nth-child(even) {
     flex-direction: row-reverse;
@@ -27,6 +26,10 @@
   }
 
   &__screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 75px 65px;
     max-width: 400px;
     min-width: 400px;
@@ -62,7 +65,6 @@
 }
 
 .description-project {
-  max-width: 500px;
 
   &__subtitle {
     margin-bottom: 10px;

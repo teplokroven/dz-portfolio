@@ -146,15 +146,17 @@ img {
   align-items: center;
   flex-wrap: wrap-reverse;
 }
+.hero__wrap {
+  max-width: 615px;
+}
 .hero__title {
   margin-bottom: 15px;
-  max-width: 487px;
   font-size: 48px;
 }
 .hero__title--underline {
   position: relative;
 }
-.hero__title--underline::before {
+.hero__title--underline::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -164,7 +166,6 @@ img {
   background-color: #528be7;
 }
 .hero__text {
-  max-width: 615px;
   margin-bottom: 45px;
 }
 .hero__link {
@@ -174,7 +175,7 @@ img {
   background-color: #528be7;
   border-radius: 3px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 16px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -205,13 +206,16 @@ img {
   display: flex;
   align-items: center;
   gap: 90px;
-  flex-wrap: wrap-reverse;
 }
 .project:nth-child(even) {
   flex-direction: row-reverse;
   text-align: end;
 }
 .project__screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 75px 65px;
   max-width: 400px;
   min-width: 400px;
@@ -239,9 +243,6 @@ img {
   font-size: 20px;
 }
 
-.description-project {
-  max-width: 500px;
-}
 .description-project__subtitle {
   margin-bottom: 10px;
 }
@@ -262,7 +263,6 @@ img {
 
 .email {
   max-width: 320px;
-  margin-bottom: 50px;
 }
 .email__subtitle {
   margin-bottom: 15px;
@@ -371,7 +371,6 @@ img {
 .footer-container {
   width: 100%;
 }
-
 .footer-info {
   display: flex;
   flex-direction: column;
@@ -404,4 +403,162 @@ img {
 .icon:hover {
   fill: #528be7;
   transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+  .hero__link {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) and (max-width: 854px) {
+  .section-hero {
+    padding-top: 100px;
+  }
+  .hero__foto {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .section-hero {
+    padding-bottom: 130px;
+  }
+  .hero__link {
+    font-size: 30px;
+  }
+  .projects__title {
+    font-size: 40px;
+  }
+  .project {
+    flex-direction: column-reverse;
+    align-items: normal;
+    gap: 50px;
+  }
+  .project:nth-child(even) {
+    flex-direction: column-reverse;
+    align-items: end;
+  }
+  .description-project {
+    max-width: 580px;
+  }
+  .description-project__subtitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .description-project__text {
+    font-size: 22px;
+  }
+  .screen-project {
+    width: 100%;
+    max-width: 100%;
+    min-height: 350px;
+  }
+  .contacts__title {
+    font-size: 40px;
+  }
+  .contacts__wrap {
+    flex-direction: column;
+    align-items: start;
+  }
+  .email {
+    max-width: 100%;
+    margin-bottom: 100px;
+  }
+  .email__subtitle {
+    font-size: 30px;
+  }
+  .email__text {
+    font-size: 22px;
+  }
+  .email__link {
+    font-size: 24px;
+  }
+  .connect {
+    width: 100%;
+    max-width: 100%;
+  }
+  .connect__subtitle {
+    font-size: 30px;
+  }
+  .form__input {
+    height: 60px;
+    font-size: 22px;
+  }
+  .form__input::-moz-placeholder {
+    font-size: 22px;
+  }
+  .form__input::placeholder {
+    font-size: 22px;
+  }
+  .form__btn {
+    font-size: 20px;
+  }
+  .footer-info__foto {
+    width: 200px;
+  }
+  .footer-info__title {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+  .footer-info__icons {
+    gap: 70px;
+  }
+  .icon {
+    transform: scale(2.5);
+  }
+  .icon:hover {
+    transform: scale(2.3);
+  }
+}
+@media (max-width: 576px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .hero__foto {
+    width: 250px;
+  }
+  .hero__title {
+    margin-bottom: 30px;
+  }
+  .hero__text {
+    font-size: 22px;
+    margin-bottom: 70px;
+  }
+  .description-project {
+    max-width: 100%;
+  }
+  .screen-project {
+    min-height: 80vh;
+  }
+}
+@media (max-width: 360px) {
+  .hero__title {
+    font-size: 45px;
+  }
+  .hero__link {
+    font-size: 28px;
+  }
+  .screen-project {
+    min-width: 100%;
+  }
+  .form__input {
+    height: 60px;
+    font-size: 18px;
+  }
+  .form__input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .form__input::placeholder {
+    font-size: 16px;
+  }
+  .footer-info__title {
+    font-size: 25px;
+    margin-bottom: 60px;
+  }
+  .footer-info__icons {
+    gap: 55px;
+  }
 }/*# sourceMappingURL=main.css.map */
