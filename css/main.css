@@ -239,6 +239,9 @@ img {
   font-size: 20px;
 }
 
+.description-project {
+  max-width: 500px;
+}
 .description-project__subtitle {
   margin-bottom: 10px;
 }
