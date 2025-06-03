@@ -1,0 +1,31 @@
+@use './vars' as *;
+
+.section {
+  padding: 70px 0;
+
+  &-hero {
+    padding-top: 160px;
+    padding-bottom: 195px;
+  }
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  color: $title-main-color;
+  font-family: $font-main;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: $subtitle-main-color;
+  font-family: $font-main;
+}
+
+.text {
+  margin: 0;
+  color: $text-main-color;
+  font-family: $font-second;
+}

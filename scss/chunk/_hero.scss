@@ -1,0 +1,59 @@
+@use '../vars' as *;
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+
+  &__title {
+    margin-bottom: 15px;
+    max-width: 487px;
+    font-size: 48px;
+  }
+
+  &__title--underline {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.15em;
+      left: 0;
+      bottom: 3px;
+      background-color: $accent-color;
+    }
+  }
+
+  &__text {
+    max-width: 615px;
+    margin-bottom: 45px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 15px 30px;
+    color: $text-main-color;
+    background-color: $accent-color;
+    border-radius: 3px;
+    font-family: $font-main;
+    font-weight: 800;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+      background-color: $text-main-color;
+      color: $accent-color;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  &__foto {
+    width: 200px;
+    height: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+@use '../vars' as *;
+
+.projects {
+
+  &__title {
+    margin-bottom: 100px;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  flex-wrap: wrap-reverse;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: end;
+  }
+
+  &__screen {
+    padding: 75px 65px;
+    max-width: 400px;
+    min-width: 400px;
+    background-color: $accent-color;
+    border-radius: 5px;
+
+    &--icon-shop::before {
+      content: url(../images/2.webp);
+      display: block;
+      text-align: center;
+    }
+
+    &--icon-portf::before {
+      content: url(../images/1.webp);
+      display: block;
+      text-align: center;
+    }
+
+    &--icon-adapt::before {
+      content: url(../images/3.webp);
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.screen-project {
+  
+  &__subtitle {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.description-project {
+
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+}

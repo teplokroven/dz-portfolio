@@ -1,0 +1,57 @@
+@use './vars' as *;
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  background-color: $bg-main-color;
+  color: $text-main-color;
+}
+
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.link-reset {
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
