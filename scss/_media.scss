@@ -16,8 +16,18 @@
     }
   }
 
-  .footer-info__icons {
-    gap: 30px;
+  .footer {
+
+    &-info {
+
+      &__title {
+        margin-bottom: 35px;
+      }
+
+      &__icons {
+        gap: 30px;
+      }
+    }
   }
 }
 
@@ -26,8 +36,17 @@
     padding-bottom: 130px;
   }
 
-  .hero__link {
-    font-size: 28px;
+  .hero {
+
+    &__link {
+      font-size: 26px;
+    }
+
+    &__foto {
+      margin: 0 auto;
+      margin-bottom: 20px;
+      width: 250px;
+    }
   }
 
   .projects__title {
@@ -37,11 +56,15 @@
   .project {
     flex-direction: column-reverse;
     align-items: normal;
-    gap: 50px;
+    gap: 35px;
 
     &:nth-child(even) {
       flex-direction: column-reverse;
       align-items: end;
+    }
+
+    &__screen {
+      padding: 20px 20px;
     }
   }
 
@@ -49,12 +72,12 @@
     max-width: 580px;
 
     &__subtitle {
-      font-size: 30px;
+      font-size: 29px;
       margin-bottom: 20px;
     }
 
     &__text {
-      font-size: 22px;
+      font-size: 20px;
     }
   }
 
@@ -81,15 +104,15 @@
     margin-bottom: 100px;
 
     &__subtitle {
-      font-size: 30px;
+      font-size: 24px;
     }
 
     &__text {
-      font-size: 22px;
+      font-size: 19px;
     }
 
     &__link {
-      font-size: 24px;
+      font-size: 19px;
     }
   }
 
@@ -98,7 +121,7 @@
     max-width: 100%;
 
     &__subtitle {
-      font-size: 30px;
+      font-size: 24px;
     }
   }
 
@@ -123,21 +146,21 @@
     &-info {
 
       &__title {
-        font-size: 25px;
-        margin-bottom: 60px;
+        font-size: 21px;
+        margin-bottom: 55px;
       }
 
       &__icons {
-        gap: 55px;
+        gap: 52px;
       }
     }
   }
 
   .icon {
-    transform: scale(2.5);
+    transform: scale(1.6);
 
     &:hover {
-      transform: scale(2.3);
+      transform: scale(1.7);
     }
   }
 }
@@ -152,17 +175,18 @@
 
   .hero {
 
-    &__foto {
-      width: 250px;
-    }
-
     &__title {
       margin-bottom: 30px;
+      font-size: 35px;
     }
 
     &__text {
-      font-size: 22px;
+      font-size: 20px;
       margin-bottom: 70px;
+    }
+
+    &__link {
+      font-size: 16px;
     }
   }
 
@@ -173,19 +197,6 @@
   .screen-project {
     min-width: auto;
     min-height: 80vh;
-  }
-}
-
-@media (max-width: 360px) {
-  .hero {
-
-    &__title {
-      font-size: 45px;
-    }
-  }
-
-  .screen-project {
-    min-width: auto;
   }
 
   .form {

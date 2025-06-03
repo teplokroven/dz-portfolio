@@ -419,6 +419,9 @@ img {
   .icon:hover {
     transform: scale(1.8);
   }
+  .footer-info__title {
+    margin-bottom: 35px;
+  }
   .footer-info__icons {
     gap: 30px;
   }
@@ -428,7 +431,12 @@ img {
     padding-bottom: 130px;
   }
   .hero__link {
-    font-size: 28px;
+    font-size: 26px;
+  }
+  .hero__foto {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 250px;
   }
   .projects__title {
     font-size: 40px;
@@ -436,21 +444,24 @@ img {
   .project {
     flex-direction: column-reverse;
     align-items: normal;
-    gap: 50px;
+    gap: 35px;
   }
   .project:nth-child(even) {
     flex-direction: column-reverse;
     align-items: end;
   }
+  .project__screen {
+    padding: 20px 20px;
+  }
   .description-project {
     max-width: 580px;
   }
   .description-project__subtitle {
-    font-size: 30px;
+    font-size: 29px;
     margin-bottom: 20px;
   }
   .description-project__text {
-    font-size: 22px;
+    font-size: 20px;
   }
   .screen-project {
     width: 100%;
@@ -469,20 +480,20 @@ img {
     margin-bottom: 100px;
   }
   .email__subtitle {
-    font-size: 30px;
+    font-size: 24px;
   }
   .email__text {
-    font-size: 22px;
+    font-size: 19px;
   }
   .email__link {
-    font-size: 24px;
+    font-size: 19px;
   }
   .connect {
     width: 100%;
     max-width: 100%;
   }
   .connect__subtitle {
-    font-size: 30px;
+    font-size: 24px;
   }
   .form__input {
     height: 60px;
@@ -498,17 +509,17 @@ img {
     font-size: 20px;
   }
   .footer-info__title {
-    font-size: 25px;
-    margin-bottom: 60px;
+    font-size: 21px;
+    margin-bottom: 55px;
   }
   .footer-info__icons {
-    gap: 55px;
+    gap: 52px;
   }
   .icon {
-    transform: scale(2.5);
+    transform: scale(1.6);
   }
   .icon:hover {
-    transform: scale(2.3);
+    transform: scale(1.7);
   }
 }
 @media (max-width: 576px) {
@@ -518,15 +529,16 @@ img {
     align-items: center;
     gap: 40px;
   }
-  .hero__foto {
-    width: 250px;
-  }
   .hero__title {
     margin-bottom: 30px;
+    font-size: 35px;
   }
   .hero__text {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 70px;
+  }
+  .hero__link {
+    font-size: 16px;
   }
   .description-project {
     max-width: 100%;
@@ -534,14 +546,6 @@ img {
   .screen-project {
     min-width: auto;
     min-height: 80vh;
-  }
-}
-@media (max-width: 360px) {
-  .hero__title {
-    font-size: 45px;
-  }
-  .screen-project {
-    min-width: auto;
   }
   .form__input {
     height: 60px;
