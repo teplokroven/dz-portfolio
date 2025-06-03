@@ -439,7 +439,7 @@ img {
     width: 250px;
   }
   .projects__title {
-    font-size: 40px;
+    font-size: 35px;
   }
   .project {
     flex-direction: column-reverse;
@@ -469,7 +469,7 @@ img {
     min-height: 350px;
   }
   .contacts__title {
-    font-size: 40px;
+    font-size: 35px;
   }
   .contacts__wrap {
     flex-direction: column;
@@ -545,7 +545,6 @@ img {
   }
   .screen-project {
     min-width: auto;
-    min-height: 80vh;
   }
   .form__input {
     height: 60px;
