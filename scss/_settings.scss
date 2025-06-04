@@ -55,3 +55,18 @@ img {
   background-color: transparent;
   cursor: pointer;
 }
+
+.input-reset {
+  padding: 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+
+  &::placeholder {
+    font-size: inherit;
+  }
+}

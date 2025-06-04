@@ -9,23 +9,23 @@
   &__wrap {
     max-width: 615px;
   }
-  
+
   &__title {
     margin-bottom: 15px;
     font-size: 48px;
-  }
 
-  &__title--underline {
-    position: relative;
+    &--underline {
+      position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 0.15em;
-      left: 0;
-      bottom: 3px;
-      background-color: $accent-color;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.15em;
+        left: 0;
+        bottom: 2px;
+        background-color: $accent-color;
+      }
     }
   }
 

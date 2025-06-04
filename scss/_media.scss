@@ -178,6 +178,10 @@
     &__title {
       margin-bottom: 30px;
       font-size: 35px;
+
+      &--underline::after {
+        bottom: 1px;
+      }
     }
 
     &__text {
@@ -189,24 +193,24 @@
       font-size: 16px;
     }
   }
+}
 
-  .description-project {
-    max-width: 100%;
-  }
+.description-project {
+  max-width: 100%;
+}
 
-  .screen-project {
-    min-width: auto;
-  }
+.screen-project {
+  min-width: auto;
+}
 
-  .form {
+.form {
 
-    &__input {
-      height: 60px;
-      font-size: 18px;
+  &__input {
+    height: 60px;
+    font-size: 18px;
 
-      &::placeholder {
-        font-size: 16px;
-      }
+    &::placeholder {
+      font-size: 16px;
     }
   }
 }
