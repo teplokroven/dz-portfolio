@@ -8,7 +8,7 @@
     font-size: 20px;
   }
 
-  .icon {
+  .icon-svg {
     transform: scale(1.6);
 
     &:hover {
@@ -21,11 +21,22 @@
     &-info {
 
       &__title {
-        margin-bottom: 35px;
+        margin-bottom: 40px;
       }
 
       &__icons {
-        gap: 30px;
+        gap: 45px;
+      }
+    }
+  }
+
+  @media (max-width: 854px) {
+    .hero {
+  
+      &__foto {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 250px;
       }
     }
   }
@@ -40,12 +51,6 @@
 
     &__link {
       font-size: 26px;
-    }
-
-    &__foto {
-      margin: 0 auto;
-      margin-bottom: 20px;
-      width: 250px;
     }
   }
 
@@ -156,7 +161,7 @@
     }
   }
 
-  .icon {
+  .icon-svg {
     transform: scale(1.6);
 
     &:hover {
@@ -193,24 +198,24 @@
       font-size: 16px;
     }
   }
-}
 
-.description-project {
-  max-width: 100%;
-}
+  .description-project {
+    max-width: 100%;
+  }
 
-.screen-project {
-  min-width: auto;
-}
+  .screen-project {
+    min-width: auto;
+  }
 
-.form {
+  .form {
 
-  &__input {
-    height: 60px;
-    font-size: 18px;
+    &__input {
+      height: 60px;
+      font-size: 18px;
 
-    &::placeholder {
-      font-size: 16px;
+      &::placeholder {
+        font-size: 16px;
+      }
     }
   }
 }
