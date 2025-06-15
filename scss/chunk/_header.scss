@@ -36,8 +36,8 @@
       content: "";
       position: absolute;
       width: 0px;
-      height: 0px;
-      bottom: -1px;
+      height: 1px;
+      bottom: -2px;
       left: 0;
       background-color: $text-main-color;
       transition: all 0.6s;
