@@ -7,14 +7,19 @@ require 'phpmailer/Exception.php';
 // Проверка, что ошибки нет
 if (!error_get_last()) {
 
+	$name = $_POST['name'];
+	$connects = $_POST['connects'];
+	$comment = $_POST['comment'];
+	
 	// Формирование самого письма
 	$title = "Новая заявка";
-	$name = $_POST['name'];
-
-	// Формирование самого письма
 	$body = "
     <h2>Новое письмо</h2>
-    <b>Имя:</b> $name<br>
+    <b>Имя:</b> $name
+		<br>
+		<b>Контакт:</b> $connects
+		<br>
+		<b>Комментарий:</b> $comment
 	";
 
 	// Настройки PHPMailer
@@ -56,5 +61,16 @@ if (!error_get_last()) {
 	$data['desc'] = error_get_last();
 }
 
-// Переадресация после отправки
-header("Location: index.html");
+/* if (isset($_POST['submit'])) {  
+	if($_SERVER['REQUEST_METHOD'] == 'POST') {  
+			$name = $_POST['name'];  
+			$email = $_POST['email'];  
+			$message = $_POST['message'];  
+			if($name && $email && $message) {  
+					header('Location: ./pages/thankyou.html');  
+			}  
+	}  
+}  */
+
+// Переадресация после отправки 
+header("Location: ./pages/thank-you.html");
