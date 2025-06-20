@@ -1,0 +1,47 @@
+@use '../vars' as *;
+
+.footer {
+  padding: 60px 0;
+  border-top: 1px solid $border-color;
+
+  &-container {
+    width: 100%;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__foto {
+      width: 140px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-decoration: underline;
+      text-decoration-skip-ink: all;
+      text-decoration-color: $accent-color;
+      text-decoration-thickness: 0.15em;
+    }
+
+    &__icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+}
+
+.icon-svg {
+  fill: $text-main-color;
+  transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    fill: $accent-color;
+    transform: scale(1.1);
+  }
+}

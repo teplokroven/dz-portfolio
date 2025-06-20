@@ -1,0 +1,127 @@
+@use '../vars' as *;
+
+.contacts {
+
+  &__title {
+    margin-bottom: 100px;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.email {
+  max-width: 320px;
+
+  &__subtitle {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    position: relative;
+    margin-right: 17px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: $font-second;
+    color: $accent-color;
+    text-decoration: none;
+    transition: all 0.3s;
+
+    &-arrow::after {
+      content: url(../images/way.png);
+      position: relative;
+      top: 0;
+      transform: translateX(-50%);
+    }
+
+    &::before {
+      content: "";
+      width: 0px;
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      color: $accent-color;
+      transition: all 0.6s;
+      border-bottom: 2px solid;
+    }
+
+    &:hover::before {
+      width: 98%;
+      transition: all 0.3s;
+      color: $text-main-color;
+    }
+
+    &:hover {
+      color: $text-main-color;
+    }
+  }
+}
+
+.connect {
+  max-width: 350px;
+
+  &__subtitle {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+}
+
+.form {
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    gap: 35px;
+  }
+
+  &__input {
+    height: 30px;
+    font-family: $font-second;
+    font-size: 16px;
+    color: $text-main-color;
+    border-bottom: 1px solid $accent-color;
+    transition: all 0.6s;
+
+    &:focus {
+      border-bottom: 1px solid $text-main-color;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      font-family: $font-second;
+      color: $border-color;
+    }
+  }
+
+  &__btn {
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 3px;
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: $accent-color;
+    color: $text-main-color;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+      background-color: $text-main-color;
+      color: $accent-color;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
